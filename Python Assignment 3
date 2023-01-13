@@ -1,0 +1,10 @@
+print("Welcome to Mad Libs Generator")
+
+Name = input('enter Name : ').title()
+petname=input('enter petName : ').title()
+color = input('enter a color name : ').title()
+place = input('enter a place name : ').title()
+adjactive1 = input('enter a adjactive : ').title()
+food = input('enter a food name : ').title()
+hobby = input('enter a hobby name : ').title()
+print('Hi my name is '+ Name+' but my friends call me '+petname+ '. My favorite color is '+color+' and my favorite place is '+place+'.I am very '+adjactive1+ ' person.I like to eat '+food+' and '+hobby+' is my favourite hobby')
