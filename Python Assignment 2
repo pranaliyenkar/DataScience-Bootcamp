@@ -1,0 +1,14 @@
+import random
+v1=round((random.random()*100))
+print("The First Random Number is =",v1)
+
+v2=int(input("Guess the number="))
+if v1==v2:
+    print("The guess is right")
+elif v1>v2:
+    print("The guess is wrong")
+    print("The random number generated is greater than guessed number by ",v1-v2)
+elif v1<v2:  
+    print("The guess is wrong")
+    print("The random number generated is lower than guessed number by ",v2-v1)    
+    
