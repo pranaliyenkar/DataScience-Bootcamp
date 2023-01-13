@@ -1,0 +1,11 @@
+import random
+print("Welcome to Dice rolling Program")
+min=1
+max=6
+ask="N"
+print("   The First Random Number is ",random.randint(min, max))
+ask=input("You would ike to roll again (Y/N)?")
+while (ask.upper()=="Y") :
+    print("   The Next Number is ",random.randint(min, max))
+    ask=input("You would ike to roll again (Y/N)?")
+print("Thank You!!")
