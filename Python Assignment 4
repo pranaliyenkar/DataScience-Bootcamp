@@ -1,0 +1,74 @@
+directions = ["left","right","forward","backward"]
+print("WELCOME! LET BEGIN THE ADVENTURE !!!!!! You are standing in front of the mail gate of the home and the surprise is kept at garden. You can choose to go down any of the four directions. Where would you like to go?")
+uinput = ""
+b2=""
+def bedroom1():
+    uinput = ""
+    print("Welcome to bedroom1")
+    print("Please select any of the directions to move : left or right or  backward or forward")
+    uinput = input()
+    if uinput == "left":
+        noroom()
+    elif uinput == "right":
+        bedroom2()
+    elif uinput == "forward":
+        noroom()
+    elif uinput == "backward":
+        print("This is the way from where you enter....")
+  
+        
+def bedroom2():
+    uinput = ""
+    b2 = "y"
+    print("Welcome to bedroom2")
+    #print(b2)
+    print("Please select any of the directions to move : left or right or  backward or forward")
+    uinput = input()
+    if uinput == "left":
+        noroom()
+    elif uinput == "right":
+        kitchen(b2)
+    elif uinput == "forward":
+        noroom()
+    elif uinput == "backward":
+        print("This is the way from where you enter....") 
+        
+def kitchen(v1):
+    uinput = ""
+    print("Welcome to kitchen.......")
+    print("Please select any of the directions to move : left or right or  backward or forward")
+    #print(v1)
+    uinput = input()
+    if (v1=="y" and uinput == "left"):
+        noroom()
+    elif (v1 =="y" and uinput == "right"):
+        print("This is the way to hall.You can not go to hall again....") 
+    elif (v1=="y" and uinput == "forward"):
+        print("Hurray!!!You reach to the garden.COngatulations") 
+    elif (v1=="y" and uinput == "backward"):
+        print("This is the way from where you enter....") 
+    if uinput == "left":
+        print("This is the way to bedroom2.You can not go to bedroom2 again....") 
+    elif uinput == "right":
+        print("Hurray!!!You reach to the garden.Congatulations")
+    elif uinput == "forward":
+        noroom()
+    elif uinput == "backward":
+        print("This is the way from where you enter....")   
+        
+def noroom():
+    print("Its Wall here") 
+    
+while uinput not in directions:
+        print("Please select any of the directions to move : left or right or  backward or forward")
+        uinput = input()
+        if uinput == "left":
+            bedroom1()
+        elif uinput == "right":
+            noroom()
+        elif uinput == "forward":
+            kitchen("n")
+        elif uinput == "backward":
+            print("This is the way from where you enter....")
+        else: 
+            print("Please enter a valid option.")
